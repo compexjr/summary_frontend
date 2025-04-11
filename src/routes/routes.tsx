@@ -1,12 +1,12 @@
 import Home from "@/pages/home";
-import { Tasks } from "@/pages/tasks";
 import { Route, Routes } from "react-router";
+import SignUp from "@/pages/sign-up";
 
 export function AppRoutes() {
 	return (
 		<Routes>
 			<Route path="/" element={<Home />} />
-			<Route path="/tarefas" element={<Tasks />} />
+			<Route path="/cadastro" element={<SignUp />} />
 		</Routes>
 	);
 }
