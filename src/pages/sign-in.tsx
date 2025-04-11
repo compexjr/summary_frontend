@@ -1,15 +1,15 @@
 import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
-import { SignUpForm } from "@/components/sign-up/sign-up-form";
+import { SignInForm } from "@/components/sign-in/sign-in-form";
 
-export default function SignUp() {
+export default function SignIn() {
 	return (
 		<div className="flex flex-col items-center justify-center h-screen">
 			<div className="flex flex-col gap-8 w-full max-w-[400px] rounded-lg">
-				<SignUpForm />
+				<SignInForm />
 
 				<Button variant="link" className="w-full" asChild>
-					<Link to="/entrar">Já possui uma conta? Faça login</Link>
+					<Link to="/cadastro">Não possui uma conta? Cadastre-se</Link>
 				</Button>
 			</div>
 		</div>

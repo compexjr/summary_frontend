@@ -12,7 +12,7 @@ import { useSignUp } from "@/hooks/use-sign-up";
 import { LoaderCircle } from "lucide-react";
 
 export function SignUpForm() {
-	const { form } = useSignUp();
+	const { form, isLoadingSignUp } = useSignUp();
 
 	return (
 		<Form {...form}>
@@ -83,10 +83,9 @@ export function SignUpForm() {
 				</span>
 
 				<Button type="submit" className="w-full">
-					{/* {isLoadingSignUp && <LoaderCircle className="animate-spin" />}
+					{isLoadingSignUp && <LoaderCircle className="animate-spin" />}
 
-					{!isLoadingSignUp && "Confirmar"} */}
-					Confirmar
+					{!isLoadingSignUp && "Confirmar"}
 				</Button>
 			</form>
 		</Form>

@@ -25,7 +25,7 @@ export function useSignUp() {
 		},
 	});
 
-	const { mutateAsync: signUpFn } = useMutation({
+	const { mutateAsync: signUpFn, isPending: isLoadingSignUp } = useMutation({
 		mutationKey: ["sign-up"],
 		mutationFn: signUp,
 		onSuccess: (response) => {
@@ -40,5 +40,6 @@ export function useSignUp() {
 
 	return {
 		form,
+		isLoadingSignUp,
 	};
 }
