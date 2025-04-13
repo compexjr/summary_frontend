@@ -12,6 +12,7 @@ Aplicação que realiza resumos de processos. Construída com React, TypeScript 
 6. [Quadro de atividades Kanban](#quadro-de-atividades-kanban)
 7. [Regras de Negócio](#regras-de-negócio)
 8. [Testes da aplicação front-end](#testes-da-aplicação-front-end)
+9. [Referências](#referencias)
 
 ## Casos de Uso
 
@@ -33,11 +34,11 @@ Aplicação que realiza resumos de processos. Construída com React, TypeScript 
      ```
    - Clone a aplicação.
      ```bash
-     git clone ?
+     git clone https://github.com/compexjr/summary_frontend
      ```
    - Vá para o diretório do projeto:
      ```bash
-     cd seed_frontend_react
+     cd summary_frontend
      ```
    - Agora instale as depedências do projeto
      ```bash
@@ -56,9 +57,9 @@ Aplicação que realiza resumos de processos. Construída com React, TypeScript 
      pnpm dev
      ```
 Observação:
-- Antes de executar a aplicação front-end, procure deixar a [aplicação back-end](https://github.com/compexjr/seed_backend) executando para permitir os testes fim a fim (front-end->back-end, back-end->front-end).
+- Antes de executar a aplicação front-end, procure deixar a [aplicação back-end](https://github.com/compexjr/summary_backend) executando para permitir os testes fim a fim (front-end->back-end, back-end->front-end).
 
-## Features Básicas
+## Funcionalidades Básicas
 
 1. F1. Login
 2. F2. Logout
@@ -71,15 +72,15 @@ Observação:
 
 - Uso do React para criar componentes dinâmicos para criar aplicações HTML dinâmicas assíncronas.
 - Uso do [TypeScript](https://en.wikipedia.org/wiki/TypeScript) para adicionar tipagem estática ao JavaScript, o que ajuda a prevenir erros comuns e torna o código mais robusto e confiável.
-- Mais detalhes sobre a stack escolhida em [link](?)
+- Mais detalhes sobre a stack escolhida em [link](https://github.com/compexjr/summary_frontend/blob/master/stack.md).
 
-## Quadro de atividades Kanban
+## Quadro de Atividades Kanban
 
 Este projeto é dividido em diferentes tarefas conforme um fluxo de trabalho estruturado. Abaixo estão as tarefas salvas da equipe back-end com os passos para adicionar novos endpoints:
 
-Quadro de Tarefas (Front-end) disponível em [link](https://github.com/orgs/compexjr/projects/7)
+Quadro de Tarefas (Front-end) disponível em [link](https://github.com/orgs/compexjr/projects/7).
 
-Quadro de Tarefas (Back-end) disponível em [link](https://github.com/orgs/compexjr/projects/6)
+Quadro de Tarefas (Back-end) disponível em [link](https://github.com/orgs/compexjr/projects/6).
 
 ## Regras de Negócio
 
@@ -89,6 +90,38 @@ Quadro de Tarefas (Back-end) disponível em [link](https://github.com/orgs/compe
 - **Dashboard:** Exibição de informações gerais sobre o sistema.
 - **Token:** Sistema de geração e validação de tokens JWT para acesso seguro aos endpoints.
 
-## Testes da aplicação front-end
+## Testes da Aplicação
 
-TBD (To be defined)
+Existem vários tipos de testes de software que podem ser aplicados durante o processo de desenvolvimento para garantir a qualidade do software. Logo abaixo seguem os tipos de testes que deverão ser feitos para garantir a qualidade da nossa aplicação.
+
+### Testes Unitários
+
+É realizado para verificar se as unidades individuais de código (geralmente funções, métodos ou classes) funcionam corretamente. O objetivo é testar cada unidade isoladamente para identificar possíveis erros lógicos ou funcionais. Geralmente, é executado pelos desenvolvedores.
+
+```bash
+pnpm test
+```
+
+### Testes E2E (End-to-End)
+
+Os testes E2E (End-to-End) são realizados para verificar o funcionamento completo de um sistema, desde o início até o fim. O objetivo é simular o comportamento real do usuário, garantindo que todos os componentes do sistema (frontend, backend, banco de dados, etc.) funcionem corretamente em conjunto. Esses testes ajudam a identificar problemas de integração e a validar fluxos de trabalho críticos. Geralmente, são executados por desenvolvedores ou equipes de QA.
+
+```bash
+pnpm test:e2e
+```
+
+## Referências
+
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+* [Typescript](https://www.typescriptlang.org/)
+* [Node.js](https://nodejs.org/en)
+* [React](https://react.dev)
+* [React Router](https://reactrouter.com/)
+* [Vite](https://vite.dev/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [Axios](https://axios-http.com/docs/intro)
+* [React Query](https://tanstack.com/query/latest/docs/framework/react/overview)
+* [Shadcn/ui](https://ui.shadcn.com/)
+* [JWT](https://jwt.io)
+* [PlantUML](https://plantuml.com)
+* [Editor PlantUML](https://plantuml-editor.kkeisuke.com)
