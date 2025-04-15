@@ -1,4 +1,4 @@
-import { FileChartColumn, Home, Image, Settings } from "lucide-react";
+import { Home, Settings } from "lucide-react";
 import { SidebarItem } from "./sidebar-item";
 
 export function SidebarContent() {
