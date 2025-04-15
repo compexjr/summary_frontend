@@ -15,7 +15,7 @@ type ProfileResponse = ProfileSuccessResponse | HTTPErrorResponse;
 
 export async function getProfile(): Promise<ProfileResponse> {
 	try {
-		const response = await api.get<ProfileSuccessResponse>("/auth/profile");
+		const response = await api.get<ProfileSuccessResponse>("/users/me");
 
 		return response.data;
 	} catch (error) {
